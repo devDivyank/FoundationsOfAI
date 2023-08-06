@@ -1,0 +1,18 @@
+Who are Elizabeth's grandchildren?
+List = [beatrice, eugenie, harry, james, louise, peter, william, zara]
+Query : ?- setof(X, grandchildOf(X, elizabeth), List)
+
+
+Who are Diana's brothers-in-law?
+List = [andrew, edward]
+Query : ?- setof(X, brotherInLawOf(X, diana), List).
+
+
+Who are Zara's cousins?
+List = [beatrice, eugenie, harry, james, louise, william]
+Query : ?- setof(X, firstCousinOf(zara, X), List).
+
+
+Who are Eugenie's ancestors?
+List = [andrew, elizabeth, george, mum, philip, sarah]
+Query : ?- setof(X, ancestorOf(X, eugenie), List).

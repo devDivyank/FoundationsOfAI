@@ -1,0 +1,15 @@
+Q1. What would the error rate of the first stump be?
+A1. Error rate = (1/200) * 36 = 0.18,
+            where 36 = the number of weights incorrectly classified
+            and,  1/200 = the initial weight.
+
+Q2. What would be the hypothesis weight of the first stump?
+A2. Hypothesis Weight = ln((1-0.18) / 0.18) = 1.51634748937
+
+Q3. What would be the initial weights of each example?
+A3. Initial Weight(s) = 1/200 = 0.005
+
+Q4. What would be the new weights of each example that was correctly classified, and each that was incorrectly classified?
+A4. We know that, 0.18/(1 - 0.18) = 0.21951219512.
+        -> New weight of each correctly classified example = 0.21951219512 * 0.005 = 0.00109756097
+        -> New weight of each incorrectly classified example = 0.005
